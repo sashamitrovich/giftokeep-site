@@ -1,0 +1,30 @@
+/* Plum washi: the app's own palette. Washi ivory ground, plum ink, gold cord accent. */
+:root {
+  --ground: #FFF9F3; --raise: #FFFFFF; --rule: #EADFD3;
+  --ink: #2B2140; --muted: #6E6280; --brand: #4C2856; --gold: #7A5A1E;
+  --measure: 36rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #17101A; --raise: #241A28; --rule: #3A2E40; --ink: #F3ECF4; --muted: #B6A9BC; --brand: #D6B3E0; --gold: #E9CF95; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem; }
+header { border-bottom: 1px solid var(--rule); padding: 1rem 0; }
+header .wrap { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+header img { width: 36px; height: 36px; border-radius: 8px; }
+.wordmark { font-family: "Iowan Old Style", "Palatino", Georgia, serif; font-style: italic; font-size: 1.6rem; color: var(--ink); text-decoration: none; }
+nav { margin-left: auto; display: flex; gap: 1.25rem; }
+a { color: var(--brand); }
+nav a { text-decoration: none; font-weight: 600; }
+.hero { padding: 3rem 0 1.5rem; }
+h1 { font-family: "Iowan Old Style", "Palatino", Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 .75rem; }
+h2 { font-size: 1.25rem; margin: 2.2rem 0 .5rem; }
+.lede { font-size: 1.2rem; color: var(--muted); max-width: var(--measure); }
+.prose { max-width: var(--measure); padding-bottom: 3rem; }
+dt { font-weight: 700; margin-top: 1.4rem; }
+dd { margin: .3rem 0 0; color: var(--ink); }
+.card { background: var(--raise); border: 1px solid var(--rule); border-radius: 16px; padding: 1.1rem 1.25rem; margin: 1.2rem 0; }
+.muted { color: var(--muted); }
+footer { border-top: 1px solid var(--rule); padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: .95rem; }
