@@ -1,11 +1,10 @@
-/* Plum washi: the app's own palette. Washi ivory ground, plum ink, gold cord accent. */
+/* Gilt: the app's own palette, from its icon (a gold box with a burgundy ribbon on
+   deep navy). Always dark, like the app. */
 :root {
-  --ground: #FFF9F3; --raise: #FFFFFF; --rule: #EADFD3;
-  --ink: #2B2140; --muted: #6E6280; --brand: #4C2856; --gold: #7A5A1E;
+  color-scheme: dark;
+  --ground: #071226; --raise: #0F1E3A; --rule: #5A5552;
+  --ink: #F1E9DA; --muted: #A8B1C4; --brand: #D9BC8C; --gold: #F1DDBB;
   --measure: 36rem;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --ground: #17101A; --raise: #241A28; --rule: #3A2E40; --ink: #F3ECF4; --muted: #B6A9BC; --brand: #D6B3E0; --gold: #E9CF95; }
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--ground); color: var(--ink);
